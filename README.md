@@ -8,6 +8,21 @@ This project was created primarily to assist navigating projects that use many
 small modules. This project solves some of my problems and I share it in the
 hope that it solves some of yours.
 
+# Modify
+
+add `js-hyperclick.config.js` support, or other `cosmiconfig` supported format
+```js
+// specify extensions & alias here
+module.exports = {
+  extensions: ['.blabla', '.js'],
+  alias: {
+    // @abc -> packages/abc/src/index.{blabla|js}
+    // @abc/def -> packages/abc/src/def
+    '@abc': 'packages/abc/src'
+  }
+}
+```
+
 # FAQ
 
 ## What is js-hyperclick?
